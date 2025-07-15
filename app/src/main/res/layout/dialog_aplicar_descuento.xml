@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🎫 Aplicar Descuento"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ID de Factura -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID de Factura *"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/edit_text_factura_descuento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej: FACT-001"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="text" />
+
+    <!-- Porcentaje de Descuento -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Porcentaje de Descuento (%) *"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/edit_text_porcentaje_descuento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej: 10"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="numberDecimal" />
+
+    <!-- Motivo del Descuento -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Motivo del Descuento *"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/edit_text_motivo_descuento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej: Paciente con seguro médico, Descuento por volumen, etc."
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:maxLines="3" />
+
+    <!-- Información sobre descuentos -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💡 Tipos de Descuentos:\n• Seguro médico (10-20%)\n• Paciente frecuente (5-15%)\n• Descuento por volumen (10-25%)\n• Descuento especial (según autorización)"
+        android:textSize="12sp"
+        android:textColor="@color/colorTextSecondary"
+        android:background="@drawable/info_background"
+        android:padding="12dp" />
+
+</LinearLayout> 

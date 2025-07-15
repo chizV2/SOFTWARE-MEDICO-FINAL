@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/text_view_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💬 Chat Unificado"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Subtítulo -->
+        <TextView
+            android:id="@+id/text_view_subtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Usuario: [Nombre]\n\nSelecciona con quién quieres conversar:"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Controles de selección -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@color/colorBackground">
+
+        <!-- Conversación -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👥 Seleccionar conversación:"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <Spinner
+            android:id="@+id/spinner_conversacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botones de control -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/button_actualizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actualizar"
+                android:layout_margin="8dp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <!-- Información del chat -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💬 Mensajes privados - Solo tú y el destinatario pueden ver esta conversación"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary"
+            android:gravity="center"
+            android:background="@drawable/info_background"
+            android:padding="8dp" />
+
+    </LinearLayout>
+
+    <!-- Área del chat -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp"
+        android:background="@color/white"
+        android:scrollbars="vertical" />
+
+    <!-- Área de entrada de mensaje -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/colorBackground"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/edit_text_mensaje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Escribe tu mensaje..."
+            android:textSize="14sp"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp"
+            android:maxLines="3"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/button_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📤"
+            android:textSize="18sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:minWidth="48dp" />
+
+    </LinearLayout>
+
+    <!-- Botón volver -->
+    <Button
+        android:id="@+id/button_volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⬅️ Volver"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_cerrar_sesion_background"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:layout_margin="16dp" />
+
+</LinearLayout> 

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Información de la cita -->
+        <TextView
+            android:id="@+id/text_view_info_cita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Información de la cita"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Estado de la cita -->
+        <TextView
+            android:id="@+id/text_view_estado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estado: Pendiente"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Botones de acción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/button_reprogramar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔄 Reprogramar"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/button_cancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="❌ Cancelar"
+                android:textSize="12sp"
+                android:background="@drawable/button_cerrar_sesion_background"
+                android:textColor="@color/white"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView> 

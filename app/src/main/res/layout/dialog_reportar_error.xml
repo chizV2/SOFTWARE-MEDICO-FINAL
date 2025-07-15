@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Título -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🚨 Reportar Error del Sistema"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tipo de Error -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Error *"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spinner_tipo_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Descripción del Error -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripción del Error *"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/edit_text_descripcion_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Describe detalladamente el error que estás experimentando..."
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:maxLines="5" />
+
+        <!-- Pasos para Reproducir -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pasos para Reproducir el Error"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/edit_text_pasos_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="1. Abrir la aplicación\n2. Ir a la sección...\n3. Hacer clic en...\n4. El error ocurre cuando..."
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:maxLines="5" />
+
+        <!-- Prioridad -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prioridad *"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="4dp" />
+
+        <Spinner
+            android:id="@+id/spinner_prioridad_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Información de Contacto -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Información de Contacto"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/edit_text_contacto_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email o teléfono para seguimiento"
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textEmailAddress" />
+
+        <!-- Información sobre reportes de errores -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💡 Información importante:\n• Los errores críticos se atienden con prioridad\n• Se te notificará cuando se resuelva el problema\n• Incluye toda la información posible para facilitar la solución\n• El administrador del sistema será notificado automáticamente"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary"
+            android:background="@drawable/info_background"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+</ScrollView> 

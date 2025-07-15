@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/edit_text_background"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
+
+    <!-- ID de la factura -->
+    <TextView
+        android:id="@+id/text_view_id_factura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Factura: FACT-001"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Información del paciente -->
+    <TextView
+        android:id="@+id/text_view_paciente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👤 Nombre del Paciente"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Información del servicio -->
+    <TextView
+        android:id="@+id/text_view_servicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 Tipo de Servicio"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Total y estado -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/text_view_total"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="💰 $0"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorSuccess" />
+
+        <TextView
+            android:id="@+id/text_view_estado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Estado: Pendiente"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <!-- Botones de acción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Botón Ver Detalle -->
+        <Button
+            android:id="@+id/button_ver_detalle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="👁️ Detalle"
+            android:textSize="12sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginEnd="4dp" />
+
+        <!-- Botón Registrar Pago -->
+        <Button
+            android:id="@+id/button_registrar_pago_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="💳 Pagar"
+            android:textSize="12sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginHorizontal="4dp" />
+
+        <!-- Botón Emitir Comprobante -->
+        <Button
+            android:id="@+id/button_emitir_comprobante_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📄 Comprobante"
+            android:textSize="12sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginStart="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout> 

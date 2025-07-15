@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📞 Información de Contacto"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gestiona tu información personal y de contacto"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:alpha="0.9" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Información Actual -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Header de la tarjeta -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="📋 Información Actual"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/text_view_estado_informacion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="✅ Completo"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorSuccess"
+                        android:background="@drawable/status_background"
+                        android:padding="6dp"
+                        android:layout_marginStart="8dp" />
+
+                </LinearLayout>
+
+                <!-- Contenido de información -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_view_progreso_completitud"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="📊 Completitud del perfil: 0%"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:gravity="center"
+                        android:background="@drawable/info_background"
+                        android:padding="8dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:id="@+id/text_view_informacion_actual"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="📝 No hay información de contacto registrada.\n\nPresiona 'Editar' para agregar tu información."
+                        android:textSize="14sp"
+                        android:textColor="@color/colorTextPrimary"
+                        android:lineSpacingExtra="4dp"
+                        android:background="@drawable/info_background"
+                        android:padding="16dp"
+                        android:gravity="center" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Formulario de Edición -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="✏️ Editar Información"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Información Personal -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👤 Información Personal"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Nombre -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👤 Nombre Completo:"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/edit_text_nombre"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Ingresa tu nombre completo"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Correo Electrónico -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📧 Correo Electrónico:"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/edit_text_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Ingresa tu correo electrónico"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Contraseña -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔒 Nueva Contraseña:"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/edit_text_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Deja vacío si no quieres cambiar la contraseña"
+                    android:inputType="textPassword"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Confirmar Contraseña -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🔒 Confirmar Contraseña:"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/edit_text_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Confirma la nueva contraseña"
+                    android:inputType="textPassword"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Teléfono -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📞 Teléfono:"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/edit_text_telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Ingresa tu teléfono"
+                    android:inputType="phone"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Fecha de Nacimiento -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🎂 Fecha de Nacimiento:"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/edit_text_fecha_nacimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="DD/MM/AAAA"
+                    android:inputType="date"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Género -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👤 Género:"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="4dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_genero"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/spinner_background"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Documento de Identidad -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🆔 Documento de Identidad:"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="4dp" />
+
+                <Spinner
+                    android:id="@+id/spinner_tipo_documento"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/spinner_background"
+                    android:layout_marginBottom="8dp" />
+
+                <EditText
+                    android:id="@+id/edit_text_documento_identidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Número de documento"
+                    android:inputType="text"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Información de Dirección -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏠 Información de Dirección"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Dirección -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📍 Dirección:"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/edit_text_direccion"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Calle, número, apartamento"
+                    android:inputType="textPostalAddress"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Ciudad -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏙️ Ciudad:"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/edit_text_ciudad"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Nombre de la ciudad"
+                    android:inputType="text"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Código Postal -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📮 Código Postal:"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/edit_text_codigo_postal"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Código postal"
+                    android:inputType="number"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Información de Emergencia -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🚨 Contacto de Emergencia"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Nombre del contacto de emergencia -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👤 Nombre del contacto:"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/edit_text_emergencia_contacto"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Nombre completo del contacto"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Teléfono de emergencia -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📱 Teléfono de emergencia:"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/edit_text_emergencia_telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Teléfono del contacto de emergencia"
+                    android:inputType="phone"
+                    android:background="@drawable/edit_text_background"
+                    android:padding="12dp"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Información Médica (Solo para Pacientes) -->
+                <LinearLayout
+                    android:id="@+id/linear_layout_campos_paciente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🏥 Información Médica"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorTextPrimary"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Tipo de Seguro -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🏥 Tipo de Seguro:"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginBottom="4dp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_tipo_seguro"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/spinner_background"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Seguro Médico -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🏥 Seguro Médico:"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginBottom="4dp" />
+
+                    <EditText
+                        android:id="@+id/edit_text_seguro"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Nombre de la EPS o seguro médico"
+                        android:inputType="text"
+                        android:background="@drawable/edit_text_background"
+                        android:padding="12dp"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Número de Seguro -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🔢 Número de Seguro:"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_marginBottom="4dp" />
+
+                    <EditText
+                        android:id="@+id/edit_text_numero_seguro"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Número de afiliación al seguro"
+                        android:inputType="text"
+                        android:background="@drawable/edit_text_background"
+                        android:padding="12dp"
+                        android:layout_marginBottom="16dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botones de Acción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/button_editar"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="✏️ EDITAR"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/button_guardar"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="💾 GUARDAR"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:visibility="gone"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/button_cancelar"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:text="❌ CANCELAR"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorError"
+                android:background="@drawable/button_cerrar_sesion_background"
+                android:visibility="gone"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView> 

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/edit_text_background"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
+
+    <!-- ID del mensaje -->
+    <TextView
+        android:id="@+id/text_view_id_mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mensaje: MSG-001"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Tipo y destinatario -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/text_view_tipo_mensaje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📋 Tipo de Mensaje"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextPrimary" />
+
+        <TextView
+            android:id="@+id/text_view_destinatario_mensaje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="👤 Para: Destinatario"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextPrimary"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <!-- Asunto -->
+    <TextView
+        android:id="@+id/text_view_asunto_mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📝 Asunto del mensaje"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Contenido -->
+    <TextView
+        android:id="@+id/text_view_contenido_mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contenido del mensaje"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Fecha -->
+    <TextView
+        android:id="@+id/text_view_fecha_mensaje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📅 Fecha del mensaje"
+        android:textSize="12sp"
+        android:textColor="@color/colorTextSecondary"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Estado y prioridad -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/text_view_estado_mensaje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Estado: Enviado"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_prioridad_mensaje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Prioridad: Normal"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <!-- Botones de acción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Botón Ver Detalle -->
+        <Button
+            android:id="@+id/button_ver_detalle_mensaje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="👁️ Detalle"
+            android:textSize="12sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginEnd="4dp" />
+
+        <!-- Botón Responder -->
+        <Button
+            android:id="@+id/button_responder_mensaje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="💬 Responder"
+            android:textSize="12sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginHorizontal="4dp" />
+
+        <!-- Botón Reenviar -->
+        <Button
+            android:id="@+id/button_reenviar_mensaje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📤 Reenviar"
+            android:textSize="12sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginStart="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout> 

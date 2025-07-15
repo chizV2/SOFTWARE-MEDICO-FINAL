@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Método de Pago -->
+    <TextView
+        android:id="@+id/text_view_metodo_pago"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Método de Pago: Efectivo"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- ID de Factura -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ID de Factura *"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/edit_text_factura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej: FACT-001"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="text" />
+
+    <!-- Monto -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Monto a Pagar ($) *"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/edit_text_monto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej: 59500"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="numberDecimal" />
+
+    <!-- Referencia -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Referencia/Número de Transacción"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/edit_text_referencia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej: TRANS-123456789"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="text" />
+
+    <!-- Información adicional -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💡 Información:\n• El pago se registrará inmediatamente\n• Se generará un comprobante automáticamente\n• La factura cambiará a estado 'PAGADA'"
+        android:textSize="12sp"
+        android:textColor="@color/colorTextSecondary"
+        android:background="@drawable/info_background"
+        android:padding="12dp" />
+
+</LinearLayout> 

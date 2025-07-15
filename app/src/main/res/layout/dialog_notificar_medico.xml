@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👨‍⚕️ Notificar al Médico"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Médico -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Médico *"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <Spinner
+        android:id="@+id/spinner_medico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Paciente -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Paciente *"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/edit_text_paciente_notificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej: María González"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textPersonName" />
+
+    <!-- Hora de la cita -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hora de la Cita"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/edit_text_hora_cita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej: 09:30"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="time" />
+
+    <!-- Observaciones -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Observaciones"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/edit_text_observaciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej: Paciente con síntomas urgentes, requiere atención inmediata"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:maxLines="3" />
+
+    <!-- Prioridad -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Prioridad"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <Spinner
+        android:id="@+id/spinner_prioridad_notificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Información sobre la notificación -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💡 La notificación se enviará al médico seleccionado y quedará registrada en el sistema para seguimiento."
+        android:textSize="12sp"
+        android:textColor="@color/colorTextSecondary"
+        android:background="@drawable/info_background"
+        android:padding="12dp" />
+
+</LinearLayout> 

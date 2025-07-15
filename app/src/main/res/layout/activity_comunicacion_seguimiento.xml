@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/text_view_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💬 Comunicación y Seguimiento"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="24dp" />
+
+    <!-- Resumen -->
+    <TextView
+        android:id="@+id/text_view_resumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💬 Resumen de Comunicación y Seguimiento"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextPrimary"
+        android:background="@drawable/info_background"
+        android:padding="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botones de acción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Primera fila -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/button_enviar_mensaje"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="📧 Enviar Mensaje"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                android:layout_marginEnd="6dp" />
+
+            <Button
+                android:id="@+id/button_ver_mensajes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="📨 Ver Mensajes"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                android:layout_marginStart="6dp" />
+
+        </LinearLayout>
+
+        <!-- Segunda fila -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/button_seguimiento_pacientes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="👥 Seguimiento"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                android:layout_marginEnd="6dp" />
+
+            <Button
+                android:id="@+id/button_recordatorios"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⏰ Recordatorios"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                android:layout_marginStart="6dp" />
+
+        </LinearLayout>
+
+        <!-- Tercera fila -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/button_notificaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔔 Notificaciones"
+                android:textSize="14sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="16dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- Botón Volver -->
+    <Button
+        android:id="@+id/button_volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⬅️ Volver"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_cerrar_sesion_background"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:layout_margin="16dp" />
+
+</LinearLayout> 

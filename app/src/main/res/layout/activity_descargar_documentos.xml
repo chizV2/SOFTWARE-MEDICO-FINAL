@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/text_view_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📄 Descargar Documentos Médicos"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Subtítulo con información del paciente -->
+        <TextView
+            android:id="@+id/text_view_subtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paciente: [Nombre]\n\nSelecciona el tipo de documento que deseas descargar:"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Información adicional -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💡 Tip: Los documentos se descargan en formato PDF y también se envían automáticamente por email"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextSecondary"
+            android:gravity="center"
+            android:background="@drawable/info_background"
+            android:padding="12dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón Descargar Recetas -->
+        <Button
+            android:id="@+id/button_descargar_recetas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💊 Descargar Recetas Médicas"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="8dp" />
+
+        <!-- Descripción de recetas -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 Incluye: Recetas actuales, históricas, pendientes de renovación"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón Descargar Resultados -->
+        <Button
+            android:id="@+id/button_descargar_resultados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔬 Descargar Resultados de Exámenes"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="8dp" />
+
+        <!-- Descripción de resultados -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Incluye: Análisis de sangre, radiografías, electrocardiogramas, estudios especializados"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón Historial de Descargas -->
+        <Button
+            android:id="@+id/button_historial_descargas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 Ver Historial de Descargas"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="32dp"
+            android:drawablePadding="8dp" />
+
+        <!-- Información de seguridad -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔒 Todos los documentos están protegidos y solo tú puedes acceder a ellos"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón Volver -->
+        <Button
+            android:id="@+id/button_volver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⬅️ Volver"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_cerrar_sesion_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:drawablePadding="8dp" />
+
+    </LinearLayout>
+</ScrollView> 

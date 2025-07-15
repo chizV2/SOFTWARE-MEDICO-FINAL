@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="@color/white">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 Detalles de la Cita"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Información del paciente -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/info_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👤 Información del Paciente"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/text_view_paciente_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nombre: María González López"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/text_view_edad_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edad: 35 años"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/text_view_telefono_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Teléfono: +34 612 345 678"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/text_view_email_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email: maria.gonzalez@email.com"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary" />
+
+    </LinearLayout>
+
+    <!-- Información de la cita -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/info_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅 Información de la Cita"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/text_view_fecha_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅 Fecha: 15 de Diciembre de 2024"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/text_view_hora_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⏰ Hora: 09:00 - 09:30"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/text_view_especialidad_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏥 Especialidad: Medicina General"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/text_view_motivo_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📝 Motivo: Control rutinario"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/text_view_tipo_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📍 Tipo: Presencial"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/text_view_prioridad_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⚡ Prioridad: Normal"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/text_view_estado_detalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✅ Estado: Confirmada"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary" />
+
+    </LinearLayout>
+
+    <!-- Historial médico -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/info_background"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 Historial Médico"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/text_view_historial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Última visita: 15/11/2024\n• Diagnóstico: Hipertensión arterial\n• Tratamiento: Metformina 500mg\n• Alergias: Ninguna conocida\n• Antecedentes: Diabetes tipo 2"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextPrimary"
+            android:lineSpacingExtra="4dp" />
+
+    </LinearLayout>
+
+    <!-- Botones de acción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_iniciar_atencion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🏥 Iniciar Atención"
+            android:textSize="14sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/button_completada_detalle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="✅ Completada"
+            android:textSize="14sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp" />
+
+        <Button
+            android:id="@+id/button_no_asistio_detalle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="❌ No Asistió"
+            android:textSize="14sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:layout_marginStart="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout> 

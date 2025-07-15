@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título del diálogo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📄 Digitalizar Documento Clínico"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Tipo de Documento -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 Tipo de Documento:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <Spinner
+        android:id="@+id/spinner_tipo_documento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Paciente -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👤 Paciente:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/edit_text_paciente_digitalizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre completo del paciente"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Descripción -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📝 Descripción:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/edit_text_descripcion_digitalizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción del documento"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Prioridad -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🚨 Prioridad:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <Spinner
+        android:id="@+id/spinner_prioridad_digitalizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Opciones de digitalización -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⚙️ Opciones de Digitalización:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <CheckBox
+        android:id="@+id/check_box_escaneo_automatico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔍 Escaneo automático (detección de bordes)"
+        android:textSize="13sp"
+        android:textColor="@color/colorTextPrimary"
+        android:checked="true"
+        android:layout_marginBottom="4dp" />
+
+    <CheckBox
+        android:id="@+id/check_box_ocr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📝 OCR (reconocimiento de texto)"
+        android:textSize="13sp"
+        android:textColor="@color/colorTextPrimary"
+        android:checked="true"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Información adicional -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💡 El documento será escaneado y procesado automáticamente. Se generará un archivo PDF con metadatos médicos."
+        android:textSize="12sp"
+        android:textColor="@color/colorTextSecondary"
+        android:background="@drawable/info_background"
+        android:padding="8dp" />
+
+</LinearLayout> 

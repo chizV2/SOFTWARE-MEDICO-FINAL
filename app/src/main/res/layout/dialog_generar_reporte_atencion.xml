@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📊 Generar Reporte de Atención Diaria"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Fecha -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha del Reporte *"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/edit_text_fecha_reporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej: 15/12/2024"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:inputType="date" />
+
+    <!-- Especialidad -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Especialidad"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <Spinner
+        android:id="@+id/spinner_especialidad_reporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Opciones adicionales -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Opciones del Reporte"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <CheckBox
+        android:id="@+id/check_box_estadisticas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📈 Incluir estadísticas detalladas"
+        android:textSize="14sp"
+        android:checked="true"
+        android:layout_marginBottom="8dp" />
+
+    <CheckBox
+        android:id="@+id/check_box_graficos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📊 Incluir gráficos y visualizaciones"
+        android:textSize="14sp"
+        android:checked="false"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Información sobre el reporte -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💡 El reporte incluirá:\n• Total de pacientes atendidos\n• Distribución por especialidad\n• Tiempo promedio de atención\n• Tasa de ocupación\n• Comparación con días anteriores"
+        android:textSize="12sp"
+        android:textColor="@color/colorTextSecondary"
+        android:background="@drawable/info_background"
+        android:padding="12dp" />
+
+</LinearLayout> 

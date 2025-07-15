@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título del diálogo -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🏷️ Diagnóstico CIE-10"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Código CIE-10 -->
+    <TextView
+        android:id="@+id/text_view_codigo_cie10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Código: I10"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:background="@drawable/info_background"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Descripción CIE-10 -->
+    <TextView
+        android:id="@+id/text_view_descripcion_cie10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción: Hipertensión esencial (primaria)"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextPrimary"
+        android:background="@drawable/info_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Paciente -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="👤 Paciente:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/edit_text_paciente_cie10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre completo del paciente"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Observaciones -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔍 Observaciones:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/edit_text_observaciones_cie10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Observaciones adicionales del diagnóstico"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Tratamiento -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💊 Tratamiento:"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="4dp" />
+
+    <EditText
+        android:id="@+id/edit_text_tratamiento_cie10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tratamiento asociado al diagnóstico"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Información adicional -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💡 El diagnóstico CIE-10 será registrado en el expediente clínico del paciente para seguimiento y estadísticas médicas."
+        android:textSize="12sp"
+        android:textColor="@color/colorTextSecondary"
+        android:background="@drawable/info_background"
+        android:padding="8dp" />
+
+</LinearLayout>

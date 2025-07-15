@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/edit_text_background"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
+
+    <!-- ID del reporte -->
+    <TextView
+        android:id="@+id/text_view_id_reporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reporte: REP-001"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Tipo y fecha -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/text_view_tipo_reporte"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📋 Tipo de Reporte"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextPrimary" />
+
+        <TextView
+            android:id="@+id/text_view_fecha_reporte"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📅 Fecha"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextPrimary"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <!-- Descripción -->
+    <TextView
+        android:id="@+id/text_view_descripcion_reporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripción del reporte"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Estadísticas -->
+    <TextView
+        android:id="@+id/text_view_estadisticas_reporte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📈 Estadísticas del reporte"
+        android:textSize="12sp"
+        android:textColor="@color/colorTextSecondary"
+        android:background="@drawable/info_background"
+        android:padding="8dp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Estado y prioridad -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/text_view_estado_reporte"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Estado: Generado"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_view_prioridad_reporte"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Prioridad: Normal"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:gravity="end" />
+
+    </LinearLayout>
+
+    <!-- Botones de acción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <!-- Botón Ver Detalle -->
+        <Button
+            android:id="@+id/button_ver_detalle_reporte"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="👁️ Detalle"
+            android:textSize="12sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginEnd="4dp" />
+
+        <!-- Botón Descargar -->
+        <Button
+            android:id="@+id/button_descargar_reporte"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📥 PDF"
+            android:textSize="12sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginHorizontal="4dp" />
+
+        <!-- Botón Compartir -->
+        <Button
+            android:id="@+id/button_compartir_reporte"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📤 Compartir"
+            android:textSize="12sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginStart="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout> 

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@color/colorPrimary">
+
+    <!-- Logo o título de la aplicación -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BioMonitor"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.05"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Software médico y de monitoreo"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="48dp"
+        android:fontFamily="sans-serif"
+        android:letterSpacing="0.02"
+        android:alpha="0.9" />
+
+    <!-- Card principal -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="12dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="32dp">
+
+            <!-- Título del formulario -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Seleccione su Rol"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <!-- Spinner para selección de roles -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rol de Usuario:"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif" />
+
+            <Spinner
+                android:id="@+id/spinner_roles"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/spinner_background"
+                android:popupBackground="@android:color/white" />
+
+            <!-- Botón ingresar -->
+            <Button
+                android:id="@+id/boton_ingresar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ingresar"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Información adicional -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© 2024 BioMonitor - Software médico y de monitoreo"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="40dp"
+        android:alpha="0.7"
+        android:fontFamily="sans-serif" />
+
+</LinearLayout> 

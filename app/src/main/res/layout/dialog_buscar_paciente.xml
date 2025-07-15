@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔍 Buscar Paciente"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Campo de búsqueda -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresa el nombre, email o documento:"
+        android:textSize="14sp"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <EditText
+        android:id="@+id/edit_text_buscar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ej: María, maria@email.com, CC-12345678"
+        android:background="@drawable/edit_text_background"
+        android:padding="12dp"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Información de búsqueda -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💡 Tipos de búsqueda disponibles:\n• Nombre completo o parcial\n• Dirección de email\n• Número de documento\n• Número de seguro"
+        android:textSize="12sp"
+        android:textColor="@color/colorTextSecondary"
+        android:background="@drawable/info_background"
+        android:padding="12dp" />
+
+</LinearLayout> 

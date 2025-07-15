@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/text_view_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🏥 Funcionalidades del Paciente"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Mensaje de bienvenida -->
+        <TextView
+            android:id="@+id/text_view_bienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido\n\nSelecciona la funcionalidad que deseas utilizar:"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Botón de Alertas y Citas -->
+        <Button
+            android:id="@+id/button_alertas_citas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔔 Alertas y Mis Citas"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="8dp" />
+
+        <!-- Botón Solicitar Cita -->
+        <Button
+            android:id="@+id/button_solicitar_cita"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅 Solicitar Cita"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="8dp" />
+
+        <!-- Botón Consultar Historial -->
+        <Button
+            android:id="@+id/button_consultar_historial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📊 Consultar Historial Clínico Personal"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="8dp" />
+
+        <!-- Botón Descargar Recetas -->
+        <Button
+            android:id="@+id/button_descargar_recetas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📄 Descargar Recetas y Resultados de Exámenes"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:drawablePadding="8dp" />
+
+        <!-- Botón Teleconsultas -->
+        <Button
+            android:id="@+id/button_teleconsultas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="💻 Acceder a Teleconsultas o Chat Médico"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="32dp"
+            android:drawablePadding="8dp" />
+
+        <!-- Botón Volver -->
+        <Button
+            android:id="@+id/button_volver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="⬅️ Volver"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_cerrar_sesion_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:drawablePadding="8dp" />
+
+    </LinearLayout>
+</ScrollView> 

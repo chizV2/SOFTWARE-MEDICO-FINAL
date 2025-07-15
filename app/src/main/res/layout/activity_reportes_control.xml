@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/text_view_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📊 Reportes y Control"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="24dp" />
+
+    <!-- Resumen -->
+    <TextView
+        android:id="@+id/text_view_resumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📊 Resumen de Reportes y Control"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextPrimary"
+        android:background="@drawable/info_background"
+        android:padding="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botones de acción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Primera fila de botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/button_reporte_atencion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="📊 Atención Diaria"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/button_reporte_cancelaciones"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="❌ Cancelaciones"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:layout_marginHorizontal="4dp" />
+
+            <Button
+                android:id="@+id/button_reporte_ingresos"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="💰 Ingresos"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:layout_marginStart="4dp" />
+
+        </LinearLayout>
+
+        <!-- Segunda fila de botones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/button_carga_trabajo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="👨‍⚕️ Carga de Trabajo"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/button_reportar_error"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🚨 Reportar Error"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:layout_marginStart="4dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- ScrollView para la lista de reportes -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_reportes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp" />
+
+    </ScrollView>
+
+    <!-- Mensaje cuando no hay reportes -->
+    <TextView
+        android:id="@+id/text_view_sin_reportes"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="📋 No hay reportes generados\n\nPresiona los botones de arriba para generar reportes"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextSecondary"
+        android:gravity="center"
+        android:padding="32dp"
+        android:visibility="gone" />
+
+    <!-- Botón Volver -->
+    <Button
+        android:id="@+id/button_volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⬅️ Volver"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_cerrar_sesion_background"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:layout_margin="16dp" />
+
+</LinearLayout> 

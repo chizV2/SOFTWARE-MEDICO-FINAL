@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/text_view_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💊 Prescripción y Órdenes Médicas"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="24dp" />
+
+    <!-- Resumen -->
+    <TextView
+        android:id="@+id/text_view_resumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💊 Resumen de Prescripciones y Órdenes"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextPrimary"
+        android:background="@drawable/info_background"
+        android:padding="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Botones de acción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Primera fila -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/button_nueva_prescripcion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="💊 Nueva Prescripción"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                android:layout_marginEnd="6dp" />
+
+            <Button
+                android:id="@+id/button_nueva_orden"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="📋 Nueva Orden"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                android:layout_marginStart="6dp" />
+
+        </LinearLayout>
+
+        <!-- Segunda fila -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/button_ver_prescripciones"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="💊 Ver Prescripciones"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                android:layout_marginEnd="6dp" />
+
+            <Button
+                android:id="@+id/button_ver_ordenes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="📋 Ver Órdenes"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="16dp"
+                android:layout_marginStart="6dp" />
+
+        </LinearLayout>
+
+        <!-- Tercera fila -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="12dp">
+
+            <Button
+                android:id="@+id/button_renovar_prescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔄 Renovar Prescripción"
+                android:textSize="14sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="16dp" />
+
+        </LinearLayout>
+
+        <!-- ScrollView para la lista de prescripciones -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/linear_layout_prescripciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </ScrollView>
+
+        <!-- Mensaje cuando no hay prescripciones -->
+        <TextView
+            android:id="@+id/text_view_sin_prescripciones"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="💊 No hay prescripciones activas\n\nPresiona 'Nueva Prescripción' para crear una"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextSecondary"
+            android:gravity="center"
+            android:padding="32dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <!-- Botón Volver -->
+    <Button
+        android:id="@+id/button_volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⬅️ Volver"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_cerrar_sesion_background"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:layout_margin="16dp" />
+
+</LinearLayout> 

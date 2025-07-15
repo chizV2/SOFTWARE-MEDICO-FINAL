@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/edit_text_background"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
+
+    <!-- Encabezado del documento -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/text_view_id_documento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Documento: DOC-001"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/text_view_estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✅ Digitalizado"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <!-- Tipo y Paciente -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:id="@+id/text_view_tipo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📋 Examen de Laboratorio"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextPrimary" />
+
+        <TextView
+            android:id="@+id/text_view_prioridad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📋 Normal"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:padding="2dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <!-- Paciente y Fecha -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:id="@+id/text_view_paciente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="👤 María González"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextPrimary" />
+
+        <TextView
+            android:id="@+id/text_view_fecha_hora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📅 15/12/2024 - 09:30"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary" />
+
+    </LinearLayout>
+
+    <!-- Descripción -->
+    <TextView
+        android:id="@+id/text_view_descripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hemograma completo - Resultados normales"
+        android:textSize="13sp"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/info_background"
+        android:padding="8dp" />
+
+    <!-- Archivo y Tamaño -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/text_view_archivo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📁 hemograma_maria_gonzalez.pdf"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary" />
+
+        <TextView
+            android:id="@+id/text_view_tamano"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💾 2.5 MB"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary" />
+
+    </LinearLayout>
+
+    <!-- Botones de acción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_ver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="👁️ Ver"
+            android:textSize="11sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/button_descargar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📥 Descargar"
+            android:textSize="11sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginHorizontal="4dp" />
+
+        <Button
+            android:id="@+id/button_compartir"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📤 Compartir"
+            android:textSize="11sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginStart="4dp" />
+
+    </LinearLayout>
+
+</LinearLayout> 

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="12dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@color/colorCardBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header de la notificación -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:id="@+id/text_view_titulo_notificacion"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🔔 NUEVO USUARIO"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary" />
+
+            <TextView
+                android:id="@+id/text_view_estado_notificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="⏳ Pendiente"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:padding="4dp"
+                android:background="@drawable/status_background"
+                android:textColor="@color/colorWarning" />
+
+        </LinearLayout>
+
+        <!-- Fecha de la notificación -->
+        <TextView
+            android:id="@+id/text_view_fecha_notificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📅 01/01/2024 10:30"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Mensaje de la notificación -->
+        <TextView
+            android:id="@+id/text_view_mensaje_notificacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👤 Nuevo usuario registrado..."
+            android:textSize="14sp"
+            android:textColor="@color/colorText"
+            android:lineSpacingExtra="2dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Botones de acción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button_ver_detalles"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="📋 Ver Detalles"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="4dp"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/button_procesar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="✅ Procesar"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/button_gestionar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🔧 Gestionar"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="4dp"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView> 

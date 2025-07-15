@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/edit_text_background"
+    android:padding="16dp"
+    android:layout_marginBottom="12dp"
+    android:elevation="2dp">
+
+    <!-- Encabezado de la prescripción/orden -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:id="@+id/text_view_id_prescripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Prescripción: PRESC-001"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/text_view_estado_prescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="✅ Activa"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:padding="4dp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <!-- Paciente y Fecha -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:id="@+id/text_view_paciente_prescripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="👤 María González"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextPrimary" />
+
+        <TextView
+            android:id="@+id/text_view_fecha_prescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📅 15/12/2024"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary" />
+    </LinearLayout>
+
+    <!-- Tipo y Medicamento/Examen -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="4dp">
+
+        <TextView
+            android:id="@+id/text_view_tipo_prescripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="💊 Prescripción"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextPrimary" />
+
+        <TextView
+            android:id="@+id/text_view_medicamento_prescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="💊 Paracetamol 500mg"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary" />
+    </LinearLayout>
+
+    <!-- Dosis, Duración, Indicaciones -->
+    <TextView
+        android:id="@+id/text_view_dosis_prescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📏 1 tableta cada 8 horas"
+        android:textSize="13sp"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="2dp" />
+
+    <TextView
+        android:id="@+id/text_view_duracion_prescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⏰ 7 días"
+        android:textSize="13sp"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="2dp" />
+
+    <TextView
+        android:id="@+id/text_view_indicaciones_prescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📝 Para dolor de cabeza"
+        android:textSize="13sp"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Prioridad -->
+    <TextView
+        android:id="@+id/text_view_prioridad_prescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="📋 Normal"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:padding="2dp"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Botones de acción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_ver_detalle_prescripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="👁️ Ver"
+            android:textSize="11sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/button_renovar_prescripcion_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🔄 Renovar"
+            android:textSize="11sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginHorizontal="4dp" />
+
+        <Button
+            android:id="@+id/button_cancelar_prescripcion_item"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="❌ Cancelar"
+            android:textSize="11sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+</LinearLayout> 

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <!-- Header con título de la aplicación -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="40dp">
+
+        <!-- Título de la aplicación -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BioMonitor"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="sans-serif-light"
+            android:letterSpacing="0.05"
+            android:shadowColor="@android:color/black"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Software médico y de monitoreo"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="sans-serif"
+            android:letterSpacing="0.02"
+            android:alpha="0.9" />
+    </LinearLayout>
+
+    <!-- Card del formulario -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardBackgroundColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="24dp">
+
+            <!-- Título dinámico -->
+            <TextView
+                android:id="@+id/text_view_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iniciar Sesión"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <!-- Campo Nombre Completo (solo para registro) -->
+            <TextView
+                android:id="@+id/text_view_nombre_completo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre Completo:"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edit_text_nombre_completo"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Ingresa tu nombre completo"
+                android:inputType="textPersonName"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif"
+                android:visibility="gone" />
+
+            <!-- Campo de usuario/email -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuario/Email:"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif" />
+
+            <EditText
+                android:id="@+id/edit_text_usuario"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Ingrese su usuario o email"
+                android:inputType="textEmailAddress"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif" />
+
+            <!-- Campo de contraseña -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contraseña:"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif" />
+
+            <EditText
+                android:id="@+id/edit_text_password"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Ingrese su contraseña"
+                android:inputType="textPassword"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="24dp"
+                android:fontFamily="sans-serif" />
+
+            <!-- Campo Confirmar Contraseña (solo para registro) -->
+            <TextView
+                android:id="@+id/text_view_confirmar_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmar Contraseña:"
+                android:textSize="18sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/edit_text_confirmar_password"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:hint="Confirma tu contraseña"
+                android:inputType="textPassword"
+                android:textSize="16sp"
+                android:padding="16dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="32dp"
+                android:fontFamily="sans-serif"
+                android:visibility="gone" />
+
+            <!-- Botón de acción -->
+            <Button
+                android:id="@+id/boton_accion"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:text="INICIAR SESIÓN"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-medium"
+                android:letterSpacing="0.05" />
+
+            <!-- Enlace para cambiar modo -->
+            <TextView
+                android:id="@+id/text_view_cambiar_modo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¿No tienes cuenta? Regístrate aquí"
+                android:textSize="16sp"
+                android:textColor="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:padding="8dp"
+                android:background="?android:attr/selectableItemBackground"
+                android:fontFamily="sans-serif" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Información adicional -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© 2024 BioMonitor - Software médico y de monitoreo"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="40dp"
+        android:alpha="0.7"
+        android:fontFamily="sans-serif" />
+
+</LinearLayout> 

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <!-- Título principal -->
+    <TextView
+        android:id="@+id/text_view_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💬 Comunicación Médica"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-light" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:id="@+id/text_view_subtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Médico: Dr. Carlos Rodríguez\n\nSelecciona con quién quieres conversar:"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="sans-serif" />
+
+    <!-- Selector de conversación -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📨 Seleccionar Conversación:"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <Spinner
+        android:id="@+id/spinner_conversacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/spinner_background"
+        android:padding="12dp" />
+
+    <!-- Área de chat -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="#FAFAFA">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💬 Conversación"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_chat"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Área de envío de mensaje -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <EditText
+            android:id="@+id/edit_text_mensaje"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Escribe tu mensaje..."
+            android:background="@drawable/edit_text_background"
+            android:padding="12dp"
+            android:layout_marginEnd="8dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:inputType="textMultiLine"
+            android:maxLines="3" />
+
+        <Button
+            android:id="@+id/button_enviar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📤 Enviar"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+    <!-- Botones de control -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp">
+
+        <Button
+            android:id="@+id/button_verificar_usuarios"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🔍 Verificar"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginEnd="4dp" />
+
+        <Button
+            android:id="@+id/button_actualizar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🔄 Actualizar"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="12dp"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginStart="4dp" />
+
+    </LinearLayout>
+
+    <!-- Botón volver -->
+    <Button
+        android:id="@+id/button_volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⬅️ Volver"
+        android:background="@drawable/button_cerrar_sesion_background"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-medium" />
+
+</LinearLayout> 

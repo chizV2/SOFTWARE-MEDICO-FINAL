@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header con información de bienvenida -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:cardBackgroundColor="@color/colorPrimary">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/text_view_bienvenida"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sistema Médico Integrado"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="8dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sesión iniciada correctamente"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:layout_gravity="center"
+                    android:alpha="0.9" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Información del usuario -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Header de la tarjeta -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="👤 Perfil de Usuario"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/text_view_estado_sesion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🟢 Activo"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorSuccess"
+                        android:background="@drawable/status_background"
+                        android:padding="6dp"
+                        android:layout_marginStart="8dp" />
+
+                </LinearLayout>
+
+                <!-- Información básica -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📋 Información Básica"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorTextPrimary"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- ID del usuario -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/info_item_background"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🆔"
+                            android:textSize="16sp"
+                            android:layout_marginEnd="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Identificación"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorTextSecondary"
+                                android:layout_marginBottom="2dp" />
+
+                            <TextView
+                                android:id="@+id/text_view_usuario_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="USR-123456"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorTextPrimary" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Nombre del usuario -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/info_item_background"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="👤"
+                            android:textSize="16sp"
+                            android:layout_marginEnd="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Nombre Completo"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorTextSecondary"
+                                android:layout_marginBottom="2dp" />
+
+                            <TextView
+                                android:id="@+id/text_view_usuario_nombre"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Juan Pérez"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorTextPrimary" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Email del usuario -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/info_item_background"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="📧"
+                            android:textSize="16sp"
+                            android:layout_marginEnd="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Correo Electrónico"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorTextSecondary"
+                                android:layout_marginBottom="2dp" />
+
+                            <TextView
+                                android:id="@+id/text_view_usuario_email"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="usuario@email.com"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorTextPrimary" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Rol del usuario -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/info_item_background"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🎭"
+                            android:textSize="16sp"
+                            android:layout_marginEnd="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Rol en el Sistema"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorTextSecondary"
+                                android:layout_marginBottom="2dp" />
+
+                            <TextView
+                                android:id="@+id/text_view_usuario_rol"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Paciente"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorPrimary" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Información de sesión -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="🔐 Información de Sesión"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorTextPrimary"
+                        android:layout_marginBottom="12dp" />
+
+                    <!-- Token de sesión -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/info_item_background"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="🔑"
+                            android:textSize="16sp"
+                            android:layout_marginEnd="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Token de Sesión"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorTextSecondary"
+                                android:layout_marginBottom="2dp" />
+
+                            <TextView
+                                android:id="@+id/text_view_token_sesion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="abc123...xyz789"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorTextSecondary"
+                                android:fontFamily="monospace" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <!-- Duración de sesión -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/info_item_background"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="⏱️"
+                            android:textSize="16sp"
+                            android:layout_marginEnd="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Duración de Sesión"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorTextSecondary"
+                                android:layout_marginBottom="2dp" />
+
+                            <TextView
+                                android:id="@+id/text_view_duracion_sesion"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="30 minutos"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorTextPrimary" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Estado de contacto -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="📞 Estado de Contacto"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorTextPrimary"
+                        android:layout_marginBottom="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:background="@drawable/info_item_background"
+                        android:padding="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="📋"
+                            android:textSize="16sp"
+                            android:layout_marginEnd="12dp" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Información de Contacto"
+                                android:textSize="12sp"
+                                android:textColor="@color/colorTextSecondary"
+                                android:layout_marginBottom="2dp" />
+
+                            <TextView
+                                android:id="@+id/text_view_estado_contacto"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="✅ Completo"
+                                android:textSize="14sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorSuccess" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Permisos del Usuario -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            app:cardBackgroundColor="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <!-- Header de la tarjeta -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="🔐 Permisos Disponibles"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/text_view_cantidad_permisos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="6 permisos"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorTextSecondary"
+                        android:background="@drawable/status_background"
+                        android:padding="6dp"
+                        android:layout_marginStart="8dp" />
+
+                </LinearLayout>
+
+                <!-- Lista de permisos -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_view_permisos_lista"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="• GESTIONAR_CITAS\n• GESTIONAR_PACIENTES\n• ACCESO_ADMINISTRATIVO"
+                        android:textSize="14sp"
+                        android:textColor="@color/colorTextPrimary"
+                        android:lineSpacingExtra="4dp"
+                        android:background="@drawable/info_background"
+                        android:padding="16dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botones de acción principales -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/button_funcionalidades"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="ACCEDER A FUNCIONALIDADES"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="12dp" />
+
+            <Button
+                android:id="@+id/button_informacion_contacto"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="GESTIONAR INFORMACIÓN DE CONTACTO"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background"
+                android:layout_marginBottom="12dp" />
+
+        </LinearLayout>
+
+        <!-- BOTÓN TEMPORAL PARA LIMPIAR USUARIOS - ELIMINAR EN PRODUCCIÓN -->
+        <Button
+            android:id="@+id/button_limpiar_usuarios"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="🗑️ LIMPIAR TODOS LOS USUARIOS"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_cerrar_sesion_background"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Botón Cerrar Sesión -->
+        <Button
+            android:id="@+id/button_cerrar_sesion"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="CERRAR SESIÓN"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorError"
+            android:background="@drawable/button_cerrar_sesion_background"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Información adicional -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="© 2024 sOFTmED v5 - Sistema Médico Integrado"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_gravity="center"
+            android:alpha="0.7" />
+
+    </LinearLayout>
+
+</ScrollView> 

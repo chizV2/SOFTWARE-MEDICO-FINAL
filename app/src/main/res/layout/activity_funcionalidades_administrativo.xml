@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Título principal -->
+        <TextView
+            android:id="@+id/text_view_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Panel de Funcionalidades Administrativas"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Mensaje de bienvenida -->
+        <TextView
+            android:id="@+id/text_view_bienvenida"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bienvenido\n\nSeleccione la funcionalidad administrativa que desea utilizar:"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary"
+            android:gravity="center"
+            android:layout_marginBottom="24dp" />
+
+        <!-- SECCIÓN: GESTIÓN DE PACIENTES -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestión de Pacientes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="12dp"
+            android:paddingHorizontal="8dp" />
+
+        <!-- Botón Gestión de Citas -->
+        <Button
+            android:id="@+id/button_gestion_citas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestión de Citas"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:drawablePadding="8dp" />
+
+        <!-- Botón Registro de Pacientes -->
+        <Button
+            android:id="@+id/button_registro_pacientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registro de Pacientes"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:drawablePadding="8dp" />
+
+        <!-- Botón Crear Cuenta de Paciente -->
+        <Button
+            android:id="@+id/button_crear_cuenta_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🆕 Crear Cuenta de Paciente"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:drawablePadding="8dp" />
+
+        <!-- SECCIÓN: ADMINISTRACIÓN FINANCIERA -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Administración Financiera"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="12dp"
+            android:paddingHorizontal="8dp" />
+
+        <!-- Botón Facturación -->
+        <Button
+            android:id="@+id/button_facturacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Facturación y Pagos"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:drawablePadding="8dp" />
+
+        <!-- SECCIÓN: DOCUMENTACIÓN Y COMUNICACIÓN -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Documentación y Comunicación"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="12dp"
+            android:paddingHorizontal="8dp" />
+
+        <!-- Botón Documentos Clínicos -->
+        <Button
+            android:id="@+id/button_documentos_clinicos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gestión de Documentos"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:drawablePadding="8dp" />
+
+        <!-- Botón Comunicación Interna -->
+        <Button
+            android:id="@+id/button_comunicacion_interna"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Comunicación Interna"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp"
+            android:drawablePadding="8dp" />
+
+        <!-- SECCIÓN: CONTROL Y REPORTES -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Control y Reportes"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="12dp"
+            android:paddingHorizontal="8dp" />
+
+        <!-- Botón Reportes y Control -->
+        <Button
+            android:id="@+id/button_reportes_control"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reportes y Control"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="12dp"
+            android:drawablePadding="8dp" />
+
+        <!-- Botón Gestión de Notificaciones -->
+        <Button
+            android:id="@+id/button_gestion_notificaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🔔 Gestión de Notificaciones"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:layout_marginBottom="32dp"
+            android:drawablePadding="8dp" />
+
+        <!-- Botón Volver -->
+        <Button
+            android:id="@+id/button_volver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Volver"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_cerrar_sesion_background"
+            android:textColor="@color/white"
+            android:padding="16dp"
+            android:drawablePadding="8dp" />
+
+    </LinearLayout>
+</ScrollView> 

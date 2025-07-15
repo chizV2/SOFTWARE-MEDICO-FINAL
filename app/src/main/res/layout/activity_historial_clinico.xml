@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/text_view_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 Mi Historial Clínico"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="24dp" />
+
+    <!-- Mensaje cuando no hay historial -->
+    <TextView
+        android:id="@+id/text_view_sin_historial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📋 No se encontró historial clínico"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextPrimary"
+        android:background="@drawable/info_background"
+        android:padding="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone" />
+
+    <!-- Contenido principal -->
+    <LinearLayout
+        android:id="@+id/linear_layout_contenido"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Resumen -->
+        <TextView
+            android:id="@+id/text_view_resumen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📋 Resumen del Historial Clínico"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary"
+            android:background="@drawable/info_background"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Filtro de fecha -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/info_background"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📅 Filtrar por fecha:"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextPrimary"
+                android:layout_marginEnd="8dp" />
+
+            <Spinner
+                android:id="@+id/spinner_filtro_fecha"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/spinner_background"
+                android:padding="8dp" />
+
+            <Button
+                android:id="@+id/button_limpiar_filtro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limpiar"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="8dp"
+                android:layout_marginStart="8dp" />
+
+        </LinearLayout>
+
+        <!-- Botones para ver diferentes secciones -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Primera fila -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="12dp">
+
+                <Button
+                    android:id="@+id/button_ver_diagnosticos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🔍 Diagnósticos"
+                    android:textSize="12sp"
+                    android:background="@drawable/button_background"
+                    android:textColor="@color/white"
+                    android:padding="16dp"
+                    android:layout_marginEnd="6dp" />
+
+                <Button
+                    android:id="@+id/button_ver_consultas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🏥 Consultas"
+                    android:textSize="12sp"
+                    android:background="@drawable/button_background"
+                    android:textColor="@color/white"
+                    android:padding="16dp"
+                    android:layout_marginStart="6dp" />
+
+            </LinearLayout>
+
+            <!-- Segunda fila -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="12dp">
+
+                <Button
+                    android:id="@+id/button_ver_enfermedades"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="⚠️ Enfermedades"
+                    android:textSize="12sp"
+                    android:background="@drawable/button_background"
+                    android:textColor="@color/white"
+                    android:padding="16dp"
+                    android:layout_marginEnd="6dp" />
+
+                <Button
+                    android:id="@+id/button_ver_alergias"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🚨 Alergias"
+                    android:textSize="12sp"
+                    android:background="@drawable/button_background"
+                    android:textColor="@color/white"
+                    android:padding="16dp"
+                    android:layout_marginStart="6dp" />
+
+            </LinearLayout>
+
+            <!-- Tercera fila -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="12dp">
+
+                <Button
+                    android:id="@+id/button_ver_cirugias"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="🔪 Cirugías"
+                    android:textSize="12sp"
+                    android:background="@drawable/button_background"
+                    android:textColor="@color/white"
+                    android:padding="16dp"
+                    android:layout_marginEnd="6dp" />
+
+                <Button
+                    android:id="@+id/button_ver_alertas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="⚠️ Alertas"
+                    android:textSize="12sp"
+                    android:background="@drawable/button_background"
+                    android:textColor="@color/white"
+                    android:padding="16dp"
+                    android:layout_marginStart="6dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Área de diagnósticos filtrados -->
+        <LinearLayout
+            android:id="@+id/linear_layout_diagnosticos"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:id="@+id/text_view_titulo_diagnosticos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔍 Diagnósticos Médicos"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="12dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/linear_layout_lista_diagnosticos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </ScrollView>
+
+        </LinearLayout>
+
+        <!-- Información adicional -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ℹ️ Esta información es de solo lectura para tu seguridad médica"
+            android:textSize="14sp"
+            android:textColor="@color/colorTextSecondary"
+            android:gravity="center"
+            android:padding="16dp"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+
+    <!-- Botón Volver -->
+    <Button
+        android:id="@+id/button_volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⬅️ Volver"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_cerrar_sesion_background"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:layout_margin="16dp" />
+
+</LinearLayout> 

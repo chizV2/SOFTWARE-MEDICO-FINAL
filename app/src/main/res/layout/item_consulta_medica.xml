@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardBackgroundColor="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Header con estado y fecha -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/text_view_estado"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="En Curso"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:background="@drawable/button_background"
+                android:padding="4dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/text_view_fecha_hora"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15/12/2024 - 09:00"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextPrimary" />
+
+        </LinearLayout>
+
+        <!-- Información del paciente -->
+        <TextView
+            android:id="@+id/text_view_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="María González"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Detalles de la consulta -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:id="@+id/text_view_especialidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medicina General"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextPrimary"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/text_view_diagnostico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="En evaluación"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextPrimary"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/text_view_tratamiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pendiente"
+                android:textSize="14sp"
+                android:textColor="@color/colorTextPrimary"
+                android:layout_marginBottom="4dp" />
+
+        </LinearLayout>
+
+        <!-- Prioridad -->
+        <TextView
+            android:id="@+id/text_view_prioridad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Normal"
+            android:textSize="12sp"
+            android:textColor="@color/colorTextSecondary"
+            android:background="@drawable/info_background"
+            android:padding="4dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Botones de acción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <Button
+                android:id="@+id/button_ver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ver"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/button_iniciar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Iniciar"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <Button
+                android:id="@+id/button_finalizar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Finalizar"
+                android:textSize="12sp"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:padding="8dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView> 

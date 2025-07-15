@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="24dp">
+
+        <Button
+            android:id="@+id/button_volver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← Volver"
+            android:textSize="14sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="📋 Registro de Diagnóstico"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <!-- Información del paciente -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/info_background"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👤 Información del Paciente"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/text_view_paciente_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Paciente: María González"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/text_view_cita_fecha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cita: 15/12/2024 - 09:00"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/text_view_motivo_consulta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Motivo: Control rutinario"
+            android:textSize="16sp"
+            android:textColor="@color/colorTextPrimary" />
+
+    </LinearLayout>
+
+    <!-- Formulario de diagnóstico -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Síntomas -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🔍 Síntomas Presentados"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edit_text_sintomas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Describa los síntomas del paciente..."
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:minLines="3"
+                android:gravity="top"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Examen físico -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🏥 Examen Físico"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edit_text_examen_fisico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Resultados del examen físico..."
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:minLines="3"
+                android:gravity="top"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Diagnóstico -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📋 Diagnóstico"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edit_text_diagnostico"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Diagnóstico principal..."
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:minLines="2"
+                android:gravity="top"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Diagnósticos secundarios -->
+            <EditText
+                android:id="@+id/edit_text_diagnosticos_secundarios"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Diagnósticos secundarios (opcional)..."
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:minLines="2"
+                android:gravity="top"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Tratamiento -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💊 Tratamiento"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edit_text_tratamiento"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tratamiento prescrito..."
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:minLines="3"
+                android:gravity="top"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Medicamentos -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="💊 Medicamentos"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edit_text_medicamentos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Medicamentos prescritos..."
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:minLines="3"
+                android:gravity="top"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Recomendaciones -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📝 Recomendaciones"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edit_text_recomendaciones"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Recomendaciones para el paciente..."
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:minLines="3"
+                android:gravity="top"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Próxima cita -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📅 Próxima Cita"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/edit_text_proxima_cita"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Fecha sugerida para próxima cita..."
+                android:background="@drawable/edit_text_background"
+                android:padding="12dp"
+                android:textSize="14sp"
+                android:layout_marginBottom="24dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Botones de acción -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/button_enviar_paciente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📤 Enviar al Paciente"
+            android:textSize="16sp"
+            android:background="@drawable/button_background"
+            android:textColor="@color/white"
+            android:padding="16dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

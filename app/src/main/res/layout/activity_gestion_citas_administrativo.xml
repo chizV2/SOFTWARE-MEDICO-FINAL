@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <!-- Título -->
+    <TextView
+        android:id="@+id/text_view_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📅 Gestión de Citas - Personal Administrativo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="24dp" />
+
+    <!-- Botón para mostrar/ocultar resumen -->
+    <Button
+        android:id="@+id/button_mostrar_resumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📊 Mostrar Resumen de Citas"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Resumen (oculto por defecto) -->
+    <TextView
+        android:id="@+id/text_view_resumen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📊 Resumen de Gestión de Citas"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextPrimary"
+        android:background="@drawable/info_background"
+        android:padding="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        android:visibility="gone" />
+
+    <!-- Filtro de citas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔍 Filtrar por:"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginEnd="12dp" />
+
+        <Spinner
+            android:id="@+id/spinner_filtro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/spinner_background"
+            android:padding="12dp" />
+
+    </LinearLayout>
+
+    <!-- ScrollView para las citas -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_citas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp" />
+
+    </ScrollView>
+
+    <!-- Mensaje cuando no hay citas -->
+    <TextView
+        android:id="@+id/text_view_sin_citas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="📋 No hay citas para gestionar\n\nLos pacientes aún no han solicitado citas"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextSecondary"
+        android:gravity="center"
+        android:padding="32dp"
+        android:visibility="gone" />
+
+    <!-- Botón Volver -->
+    <Button
+        android:id="@+id/button_volver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="⬅️ Volver"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:background="@drawable/button_cerrar_sesion_background"
+        android:textColor="@color/white"
+        android:padding="16dp"
+        android:layout_margin="16dp" />
+
+</LinearLayout> 
