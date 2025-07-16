@@ -95,13 +95,13 @@
                 android:id="@+id/button_ver_todas_citas"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="📋 Ver Todas Mis Citas"
-                android:textSize="16sp"
-                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
                 android:background="@drawable/button_background"
-                android:textColor="@color/white"
                 android:padding="16dp"
-                android:layout_marginBottom="8dp" />
+                android:text="Todas Mis Citas"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button_nueva_cita"
